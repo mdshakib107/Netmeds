@@ -14,7 +14,7 @@ const Header = () => {
                                 <img src="./image/logo.png" alt="" width="200" height="50" />
                             </NavLink>
                         </div>
-                        <div className="col-6">
+                        <div className=" col-6 ">
                             <InputGroup className=" w-100 ">
                                 <FormControl
                                     aria-label="Example text with button addon"

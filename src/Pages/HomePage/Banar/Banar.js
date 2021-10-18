@@ -29,35 +29,35 @@ const Banar = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./image/Banar/3.jpg"
+                        src="./image/Banar/4.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./image/Banar/3.jpg"
+                        src="./image/Banar/5.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./image/Banar/3.jpg"
+                        src="./image/Banar/6.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./image/Banar/3.jpg"
+                        src="./image/Banar/7.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./image/Banar/3.jpg"
+                        src="./image/Banar/8.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>
