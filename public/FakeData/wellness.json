@@ -13,7 +13,7 @@
         "shelfLife": "60 months",
         "itemWeight": "110 gm",
         "hsnCode": 39249090,
-        "img": "./buddsbuddy_baby_training_sipper_pink_300_ml_1_0.jpg",
+        "img": "./image/products/wellness/buddsbuddy_baby_training_sipper_pink_300_ml_1_0.jpg",
         "key": 1
     },
     {
@@ -30,7 +30,7 @@
         "shelfLife": "60 months",
         "itemWeight": "110 gm",
         "hsnCode": 392490958,
-        "img": "./buddsbuddy_100_pure_cotton_buds_regular_ear_tips_pack_of_3_x_100s_1s_0_0.jpg",
+        "img": "./image/products/wellness/buddsbuddy_100_pure_cotton_buds_regular_ear_tips_pack_of_3_x_100s_1s_0_0.jpg",
         "key": 2
     },
     {
@@ -47,7 +47,7 @@
         "shelfLife": "60 months",
         "itemWeight": "110 gm",
         "hsnCode": 39245590,
-        "img": "./buddsbuddy_mosquito_repellent_patches_12s_0_0.jpg",
+        "img": "./image/products/wellness/buddsbuddy_mosquito_repellent_patches_12s_0_0.jpg",
         "key": 3
     },
     {
@@ -64,7 +64,7 @@
         "shelfLife": "60 months",
         "itemWeight": "110 gm",
         "hsnCode": 39245590,
-        "img": "./wildcraft_hypashield_w95_reusable_outdoor_protection_face_mask_0_0.jpg",
+        "img": "./image/products/wellness/wildcraft_hypashield_w95_reusable_outdoor_protection_face_mask_medium_0_0.jpg",
         "key": 4
     },
     {
@@ -81,7 +81,7 @@
         "shelfLife": "60 months",
         "itemWeight": "1 leter",
         "hsnCode": 39245590,
-        "img": "./dettol_antiseptic_liquid_1_ltr_0_1.jpg",
+        "img": "./image/products/wellness/dettol_antiseptic_liquid_1_ltr_0_1.jpg",
         "key": 5
     },
     {
@@ -98,7 +98,7 @@
         "shelfLife": "60 months",
         "itemWeight": "1 leter",
         "hsnCode": 39245590,
-        "img": "./wellbeing_nutrition_melts_into_a_restful_sleep_oral_thin_strip_30s_0_0.jpg",
+        "img": "./image/products/wellness/wellbeing_nutrition_melts_into_a_restful_sleep_oral_thin_strip_30s_0_0.jpg",
         "key": 6
     },
     {
@@ -115,7 +115,7 @@
         "shelfLife": "60 months",
         "itemWeight": "1 leter",
         "hsnCode": 39245590,
-        "img": "./nirvasa_plant_based_collagen_builder_powder_berry_orange_flavour_500_gm_0_2.jpg",
+        "img": "./image/products/wellness/nirvasa_plant_based_collagen_builder_powder_berry_orange_flavour_500_gm_0_2.jpg",
         "key": 7
     },
     {
@@ -132,7 +132,7 @@
         "shelfLife": "60 months",
         "itemWeight": "1 leter",
         "hsnCode": 39245590,
-        "img": "./nutrafirst_salmon_fish_oil_omega_3_capsule_60s_0_1.jpg",
+        "img": "./image/products/wellness/nutrafirst_salmon_fish_oil_omega_3_capsule_60s_0_1.jpg",
         "key": 8
     }
 ]

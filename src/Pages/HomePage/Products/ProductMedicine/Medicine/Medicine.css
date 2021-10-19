@@ -1,0 +1,10 @@
+.cart{
+    height: 400px;
+    border: 1px solid rgb(173, 171, 171);
+}
+.cart img{
+    width: auto;
+    height: 150px;
+    padding: 20px;
+
+}

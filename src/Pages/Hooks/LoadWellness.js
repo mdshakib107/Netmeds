@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const useWellness = () => {
     const [wellness, setWellness] = useState([]);
     useEffect(() => {
-        fetch('./.FakeData/wellness.json')
+        fetch('./FakeData/wellness.json')
             .then(res => res.json())
             .then(data => setWellness(data))
     }, [])
