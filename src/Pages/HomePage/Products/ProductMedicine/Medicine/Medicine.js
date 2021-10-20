@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Medicine.css'
 const Medicine = (props) => {
     // console.log(props.medicine)  
-    const { name, bestPrice, mrp, mkt, img } = props.medicine;
+    const { name, bestPrice, mrp, mkt, img, key } = props.medicine;
     return (
         <div>
             <div className="col">
@@ -14,8 +15,10 @@ const Medicine = (props) => {
                         <small className="">{mkt}</small>
                         <p className="card-text">{bestPrice}</p>
                         <p className="card-text">{mrp}</p>
-                        <Button variant="outline-success mx-auto"><i className="fas fa-info-circle"></i> Details</Button>
-
+                        <Link to={`/medicine${key}`}>
+                            <Button variant="outline-success mx-1"><i className="fas fa-info-circle"></i> Details</Button>
+                        </Link>
+                        <Button variant="outline-success mx-1"> Add To Cart</Button>
                     </div>
                 </div>
             </div>

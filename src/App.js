@@ -15,6 +15,8 @@ import SingIn from './Pages/Register/SingIn/SingIn';
 import AuthProvider from './Contex/AuthProvider';
 import PrivateRaute from './Pages/PrivateRoute/PrivateRaute';
 import NotFound from './Pages/NotFound/NotFound';
+import MedicineDetails from './Pages/HomePage/Products/ProductMedicine/Details/MedicineDetails';
+import WellnessDetails from './Pages/HomePage/Products/ProductMedicine/Details/WellnessDetails';
 
 
 function App() {
@@ -48,6 +50,12 @@ function App() {
             <Route path="/singin">
               <SingIn></SingIn>
             </Route>
+            <PrivateRaute path="/medicine:key">
+              <MedicineDetails></MedicineDetails>
+            </PrivateRaute>
+            <PrivateRaute path="/wellness:key">
+              <WellnessDetails></WellnessDetails>
+            </PrivateRaute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
