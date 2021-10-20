@@ -1,6 +1,6 @@
 import React from 'react';
 import Medicine from '../Medicine/Medicine';
-import useMedicine from '../../../../Hooks/LoadMedicine';
+import useMedicine from '../../../../../Hooks/LoadMedicine';
 import { Link } from 'react-router-dom';
 const Medicines = () => {
     const [medicine] = useMedicine();

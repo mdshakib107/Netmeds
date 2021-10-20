@@ -1,5 +1,5 @@
 import React from 'react';
-import useWellness from '../../../../Hooks/LoadWellness';
+import useWellness from '../../../../../Hooks/LoadWellness';
 import { Link } from 'react-router-dom';
 import Wellness from '../Wellness/Wellness';
 const Wellnesses = () => {

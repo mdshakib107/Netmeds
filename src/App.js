@@ -11,35 +11,50 @@ import MedicinProducts from './Pages/MedicineProduct/MedicinProducts/MedicinProd
 import ProductsWellness from './Pages/WellnessProduct/ProductsWeness/ProductsWellness';
 import LogIn from './Pages/Register/LogIn/LogIn';
 import LabTest from './Pages/LabTest/LabTest';
+import SingIn from './Pages/Register/SingIn/SingIn';
+import AuthProvider from './Contex/AuthProvider';
+import PrivateRaute from './Pages/PrivateRoute/PrivateRaute';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/blog">
-            <HealthBlags></HealthBlags>
-          </Route>
-          <Route path="/productmedicine">
-            <MedicinProducts></MedicinProducts>
-          </Route>
-          <Route path="/productwellness">
-            <ProductsWellness></ProductsWellness>
-          </Route>
-          <Route path="/labtest">
-            <LabTest></LabTest>
-          </Route>
-          <Route path="/register">
-            <LogIn></LogIn>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <PrivateRaute path="/blog">
+              <HealthBlags></HealthBlags>
+            </PrivateRaute>
+            <Route path="/productmedicine">
+              <MedicinProducts></MedicinProducts>
+            </Route>
+            <Route path="/productwellness">
+              <ProductsWellness></ProductsWellness>
+            </Route>
+            <PrivateRaute path="/labtest">
+              <LabTest></LabTest>
+            </PrivateRaute>
+            <PrivateRaute path="/details">
+
+            </PrivateRaute>
+            <Route path="/register">
+              <LogIn></LogIn>
+            </Route>
+            <Route path="/singin">
+              <SingIn></SingIn>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

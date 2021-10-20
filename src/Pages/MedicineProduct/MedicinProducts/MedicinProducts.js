@@ -1,5 +1,5 @@
 
-import useMedicine from "../../Hooks/LoadMedicine";
+import useMedicine from "../../../Hooks/LoadMedicine";
 import MedicinProduct from "../MedicinProduct/MedicinProduct";
 
 

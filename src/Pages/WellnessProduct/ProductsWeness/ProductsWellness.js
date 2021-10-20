@@ -1,6 +1,6 @@
 import React from 'react';
 
-import useWellness from '../../Hooks/LoadWellness';
+import useWellness from '../../../Hooks/LoadWellness';
 import ProductWellness from '../ProductWellness/ProductWellness';
 
 const ProductsWellness = () => {
