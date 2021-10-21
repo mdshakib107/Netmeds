@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Button } from 'react-bootstrap';
 
 const WellnessDetails = () => {
     const { key } = useParams();
 
 
     const [wellness, setWellness] = useState({});
-    // console.log(medicine)
+
 
     useEffect(() => {
         const url = `/FakeData/wellness.json`;
@@ -16,7 +17,7 @@ const WellnessDetails = () => {
             .then(data => {
                 const survice = data.find(survice => survice.key == key)
                 setWellness(survice)
-                console.log(data);
+
             }
             );
     }, []);
@@ -33,15 +34,16 @@ const WellnessDetails = () => {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body text-start">
-                                <h5 className="card-title">{name}</h5>
+                                <h5 className="card-title fw-bold">{name}</h5>
                                 <p className="card-text"><small className="text-muted">{ingredent}</small></p>
-                                <p className="card-text"><small className="text-muted">{mkt}</small></p>
-                                <h5 className="card-title  ">{bestPrice}</h5>
-                                <p className="card-text">{mrp}</p>
+                                <p className="card-text"><small className="text-muted fst-italic">{mkt}</small></p>
+                                <h5 className="card-title fw-bold text-danger ">Best Price: {bestPrice}</h5>
+                                <p className="card-text fst-italic">MRP:  <span className="text-decoration-line-through"> {mrp}</span></p>
                                 <p className="card-text">{tax}</p>
                                 <p className="card-text">{bestPriceNote}</p>
                                 <p className="card-text">{details}</p>
                                 <p className="card-text">{delivary}</p>
+                                <Button variant="outline-success mx-1"> Add To Cart</Button>
                             </div>
                         </div>
                     </div>

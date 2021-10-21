@@ -17,7 +17,7 @@ const MedicineDetails = () => {
             .then(data => {
                 const survice = data.find(survice => survice.key == key)
                 setMedicine(survice)
-                console.log(data);
+
             }
             );
     }, []);
@@ -37,11 +37,11 @@ const MedicineDetails = () => {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body text-start">
-                                <h5 className="card-title">{name}</h5>
+                                <h5 className="card-title fw-bold">{name}</h5>
                                 <p className="card-text"><small className="text-muted">{ingredent}</small></p>
-                                <p className="card-text"><small className="text-muted">{mkt}</small></p>
-                                <h5 className="card-title  ">{bestPrice}</h5>
-                                <p className="card-text">{mrp}</p>
+                                <p className="card-text"><small className="text-muted fst-italic">{mkt}</small></p>
+                                <h5 className="card-title fw-bold text-danger ">Best Price: {bestPrice}</h5>
+                                <p className="card-text fst-italic">MRP:  <span className="text-decoration-line-through"> {mrp}</span></p>
                                 <p className="card-text">{tax}</p>
                                 <p className="card-text">{bestPriceNote}</p>
                                 <p className="card-text">{details}</p>

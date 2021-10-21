@@ -41,7 +41,7 @@ const Header = () => {
 
 
                                 </Link>
-                                {user.email && <span className="fas fa-user-circle text-white fw-bold fs-5 p-4"> {user.displayName}</span>}
+                                {user.email && <Link to="/singup"><span className="fas fa-user-circle text-white fw-bold fs-5 p-4"> {user.displayName}</span></Link>}
                                 {user.email ?
                                     <Button className="" onClick={logOut} variant="warning">Log Out</Button>
 

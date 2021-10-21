@@ -37,7 +37,7 @@ const LogIn = () => {
     return (
         <div>
             {user.email ?
-                <h1 className="container d-flex justify-content-center p-5 ">Welcome:{user.displayName}</h1>
+                <h1 className="container d-flex justify-content-center p-5 ">Welcome: <br /> {user.displayName}</h1>
                 :
                 <div className="row row-col-12 row-col-md-6 container d-flex justify-content-center ">
                     <div className="col p-5">

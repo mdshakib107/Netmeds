@@ -41,7 +41,7 @@ const SingUp = () => {
     return (
         <div>
             {user.email ?
-                <h1 className="container d-flex justify-content-center p-5 "><img src={user.photoURL} alt="" />Welcome:<br /> {user.email}<br />{user.displayName} </h1>
+                <h1 className="container d-flex justify-content-center p-5 text-start ">Welcome:<br />{user.displayName}<br />email: {user.email} </h1>
                 :
                 <div className="container d-flex justify-content-center ">
                     <div className="p-5">
