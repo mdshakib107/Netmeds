@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Nav, Navbar, Container, Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
@@ -43,8 +43,8 @@ const Header = () => {
                                 </Link>
                                 {user.email && <span className="fas fa-user-circle text-white fw-bold fs-5 p-4"> {user.displayName}</span>}
                                 {user.email ?
+                                    <Button className="" onClick={logOut} variant="warning">Log Out</Button>
 
-                                    <button onClick={logOut}>LogOut</button>
                                     :
                                     <Link to="/register" className="text-decoration-none text-white fw-bold fs-5 p-3 mx-auto">
                                         <i className="fas fa-user-circle text-white fw-bold fs-5"></i> Sing In/Log In

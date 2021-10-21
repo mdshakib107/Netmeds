@@ -1,20 +1,42 @@
 import { useEffect, useState } from "react"
 import initializeAuthentication from "../Firebase/Initialization"
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, updateProfile, signOut } from "firebase/auth";
 
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({})
-    const [error, setError] = useState({})
+    const [name, setName] = useState('');
+    const [error, setError] = useState('')
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     const singInWithGoogle = () => {
         return signInWithPopup(auth, googleProvider)
-
             .catch(error => {
                 setError(error.massage)
             })
+    }
+    const singUpWithEmailPassword = () => {
+        return createUserWithEmailAndPassword(auth, email, password)
+
+    }
+    const singInWithEmailPassword = () => {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+    const handleNameChange = e => {
+        setName(e.target.value);
+    }
+    const handaleEmail = e => {
+        setEmail(e.target.value);
+    }
+    const handalePassword = e => {
+        setPassword(e.target.value);
+    }
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => { })
     }
     const logOut = () => {
         signOut(auth)
@@ -30,9 +52,18 @@ const useFirebase = () => {
         });
     }, []);
     return {
+        email,
+        password,
         user,
         error,
         singInWithGoogle,
+        setError,
+        handleNameChange,
+        setUserName,
+        handaleEmail,
+        handalePassword,
+        singUpWithEmailPassword,
+        singInWithEmailPassword,
         logOut
     }
 }

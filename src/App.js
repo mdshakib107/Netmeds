@@ -11,12 +11,12 @@ import MedicinProducts from './Pages/MedicineProduct/MedicinProducts/MedicinProd
 import ProductsWellness from './Pages/WellnessProduct/ProductsWeness/ProductsWellness';
 import LogIn from './Pages/Register/LogIn/LogIn';
 import LabTest from './Pages/LabTest/LabTest';
-import SingIn from './Pages/Register/SingIn/SingIn';
+import SingUp from './Pages/Register/Singup/SingUp';
 import AuthProvider from './Contex/AuthProvider';
 import PrivateRaute from './Pages/PrivateRoute/PrivateRaute';
 import NotFound from './Pages/NotFound/NotFound';
-import MedicineDetails from './Pages/HomePage/Products/ProductMedicine/Details/MedicineDetails';
-import WellnessDetails from './Pages/HomePage/Products/ProductMedicine/Details/WellnessDetails';
+import MedicineDetails from './Pages/ProductDetails/Details/MedicineDetails';
+import WellnessDetails from './Pages/ProductDetails/Details/WellnessDetails';
 
 
 function App() {
@@ -47,8 +47,8 @@ function App() {
             <Route path="/register">
               <LogIn></LogIn>
             </Route>
-            <Route path="/singin">
-              <SingIn></SingIn>
+            <Route path="/singup">
+              <SingUp></SingUp>
             </Route>
             <PrivateRaute path="/medicine:key">
               <MedicineDetails></MedicineDetails>
