@@ -9,7 +9,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div >
-            <div className="bg">
+            <div className="bg fixed-top">
                 <Navbar expand="lg" >
                     <Container className="me-auto">
                         <NavLink to="/">
